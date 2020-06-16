@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Monthly</title>
+  </head>
+  <body id="main">
+    <br>
+    <br>
+    <div class="container">
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg"><img src="./icons/icons8-gas-48.png" width="30" height="30"></span>
+        </div>
+        <input type="number" step="0.01" class="form-control" id="gas">
+      </div>
+      <br>
+
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg"><img src="./icons/icons8-light-48.png" height="30" width="30"></span>
+        </div>
+        <input type="number" class="form-control" id="el">
+      </div>
+      <br>
+
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg"><img src="./icons/icons8-home-48.png" height="30" width="30"></span>
+        </div>
+        <input type="number" class="form-control" id="kv">
+      </div>
+    
+      <br>
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg"><img src="./icons/icons8-home-alarm-48.png" height="30" width="30"></span>
+        </div>
+        <input type="number" class="form-control" id="disabledInput" placeholder="440" disabled>
+      </div>
+      <br>
+      <h1 class="text-center" id="totalP">0</h1>
+
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

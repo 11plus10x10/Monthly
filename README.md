@@ -1,0 +1,1 @@
+Simple electron app for calculating monthly payment (for 2 persons)
